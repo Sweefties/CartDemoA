@@ -12,7 +12,70 @@
 		7E0E06CC2013C68B005134DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0E06CA2013C68B005134DC /* Main.storyboard */; };
 		7E0E06CE2013C68B005134DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0E06CD2013C68B005134DC /* Assets.xcassets */; };
 		7E0E06D12013C68B005134DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0E06CF2013C68B005134DC /* LaunchScreen.storyboard */; };
+		7E0E06D92013C69B005134DC /* CartDemoA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0E06DA2013C69B005134DC /* CartDemoA.framework */; };
+		7E0E06E12013C6FC005134DC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0E06DF2013C6FC005134DC /* Interface.storyboard */; };
+		7E0E06E32013C6FC005134DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0E06E22013C6FC005134DC /* Assets.xcassets */; };
+		7E0E06EA2013C6FC005134DC /* DemoExampleWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7E0E06E92013C6FC005134DC /* DemoExampleWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7E0E06EF2013C6FC005134DC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E06EE2013C6FC005134DC /* InterfaceController.swift */; };
+		7E0E06F12013C6FC005134DC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E06F02013C6FC005134DC /* ExtensionDelegate.swift */; };
+		7E0E06F32013C6FC005134DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0E06F22013C6FC005134DC /* Assets.xcassets */; };
+		7E0E06F72013C6FC005134DC /* DemoExampleWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7E0E06DD2013C6FB005134DC /* DemoExampleWatch.app */; };
+		7E0E07002013C70F005134DC /* CartDemoA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0E07012013C70F005134DC /* CartDemoA.framework */; };
+		7E0E07042013C71A005134DC /* CartDemoA.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7E0E07022013C71A005134DC /* CartDemoA.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E0E06EB2013C6FC005134DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E0E06BB2013C68B005134DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E0E06E82013C6FC005134DC;
+			remoteInfo = "DemoExampleWatch Extension";
+		};
+		7E0E06F52013C6FC005134DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E0E06BB2013C68B005134DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E0E06DC2013C6FB005134DC;
+			remoteInfo = DemoExampleWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7E0E06FB2013C6FC005134DC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7E0E06EA2013C6FC005134DC /* DemoExampleWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0E06FF2013C6FC005134DC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7E0E06F72013C6FC005134DC /* DemoExampleWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0E07052013C71A005134DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7E0E07042013C71A005134DC /* CartDemoA.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7E0E06C32013C68B005134DC /* DemoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +85,18 @@
 		7E0E06CD2013C68B005134DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0E06D02013C68B005134DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0E06D22013C68B005134DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0E06DA2013C69B005134DC /* CartDemoA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CartDemoA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0E06DD2013C6FB005134DC /* DemoExampleWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoExampleWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0E06E02013C6FC005134DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7E0E06E22013C6FC005134DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E0E06E42013C6FC005134DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0E06E92013C6FC005134DC /* DemoExampleWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DemoExampleWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0E06EE2013C6FC005134DC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7E0E06F02013C6FC005134DC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7E0E06F22013C6FC005134DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E0E06F42013C6FC005134DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0E07012013C70F005134DC /* CartDemoA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CartDemoA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0E07022013C71A005134DC /* CartDemoA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CartDemoA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +104,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E0E06D92013C69B005134DC /* CartDemoA.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0E06E62013C6FC005134DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0E07002013C70F005134DC /* CartDemoA.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +122,12 @@
 		7E0E06BA2013C68B005134DC = {
 			isa = PBXGroup;
 			children = (
+				7E0E07022013C71A005134DC /* CartDemoA.framework */,
 				7E0E06C52013C68B005134DC /* DemoExample */,
+				7E0E06DE2013C6FC005134DC /* DemoExampleWatch */,
+				7E0E06ED2013C6FC005134DC /* DemoExampleWatch Extension */,
 				7E0E06C42013C68B005134DC /* Products */,
+				7E0E06D82013C69B005134DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				7E0E06C32013C68B005134DC /* DemoExample.app */,
+				7E0E06DD2013C6FB005134DC /* DemoExampleWatch.app */,
+				7E0E06E92013C6FC005134DC /* DemoExampleWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +154,36 @@
 			path = DemoExample;
 			sourceTree = "<group>";
 		};
+		7E0E06D82013C69B005134DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E0E07012013C70F005134DC /* CartDemoA.framework */,
+				7E0E06DA2013C69B005134DC /* CartDemoA.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E0E06DE2013C6FC005134DC /* DemoExampleWatch */ = {
+			isa = PBXGroup;
+			children = (
+				7E0E06DF2013C6FC005134DC /* Interface.storyboard */,
+				7E0E06E22013C6FC005134DC /* Assets.xcassets */,
+				7E0E06E42013C6FC005134DC /* Info.plist */,
+			);
+			path = DemoExampleWatch;
+			sourceTree = "<group>";
+		};
+		7E0E06ED2013C6FC005134DC /* DemoExampleWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7E0E06EE2013C6FC005134DC /* InterfaceController.swift */,
+				7E0E06F02013C6FC005134DC /* ExtensionDelegate.swift */,
+				7E0E06F22013C6FC005134DC /* Assets.xcassets */,
+				7E0E06F42013C6FC005134DC /* Info.plist */,
+			);
+			path = "DemoExampleWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +194,52 @@
 				7E0E06BF2013C68B005134DC /* Sources */,
 				7E0E06C02013C68B005134DC /* Frameworks */,
 				7E0E06C12013C68B005134DC /* Resources */,
+				7E0E06FF2013C6FC005134DC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7E0E06F62013C6FC005134DC /* PBXTargetDependency */,
 			);
 			name = DemoExample;
 			productName = DemoExample;
 			productReference = 7E0E06C32013C68B005134DC /* DemoExample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7E0E06DC2013C6FB005134DC /* DemoExampleWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0E06FC2013C6FC005134DC /* Build configuration list for PBXNativeTarget "DemoExampleWatch" */;
+			buildPhases = (
+				7E0E06DB2013C6FB005134DC /* Resources */,
+				7E0E06FB2013C6FC005134DC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E0E06EC2013C6FC005134DC /* PBXTargetDependency */,
+			);
+			name = DemoExampleWatch;
+			productName = DemoExampleWatch;
+			productReference = 7E0E06DD2013C6FB005134DC /* DemoExampleWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7E0E06E82013C6FC005134DC /* DemoExampleWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0E06F82013C6FC005134DC /* Build configuration list for PBXNativeTarget "DemoExampleWatch Extension" */;
+			buildPhases = (
+				7E0E06E52013C6FC005134DC /* Sources */,
+				7E0E06E62013C6FC005134DC /* Frameworks */,
+				7E0E06E72013C6FC005134DC /* Resources */,
+				7E0E07052013C71A005134DC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DemoExampleWatch Extension";
+			productName = "DemoExampleWatch Extension";
+			productReference = 7E0E06E92013C6FC005134DC /* DemoExampleWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +252,14 @@
 				ORGANIZATIONNAME = socle;
 				TargetAttributes = {
 					7E0E06C22013C68B005134DC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7E0E06DC2013C6FB005134DC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					7E0E06E82013C6FC005134DC = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +279,8 @@
 			projectRoot = "";
 			targets = (
 				7E0E06C22013C68B005134DC /* DemoExample */,
+				7E0E06DC2013C6FB005134DC /* DemoExampleWatch */,
+				7E0E06E82013C6FC005134DC /* DemoExampleWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +296,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E0E06DB2013C6FB005134DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0E06E32013C6FC005134DC /* Assets.xcassets in Resources */,
+				7E0E06E12013C6FC005134DC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E0E06E72013C6FC005134DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0E06F32013C6FC005134DC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +325,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7E0E06E52013C6FC005134DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0E06F12013C6FC005134DC /* ExtensionDelegate.swift in Sources */,
+				7E0E06EF2013C6FC005134DC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E0E06EC2013C6FC005134DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E0E06E82013C6FC005134DC /* DemoExampleWatch Extension */;
+			targetProxy = 7E0E06EB2013C6FC005134DC /* PBXContainerItemProxy */;
+		};
+		7E0E06F62013C6FC005134DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E0E06DC2013C6FB005134DC /* DemoExampleWatch */;
+			targetProxy = 7E0E06F52013C6FC005134DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7E0E06CA2013C68B005134DC /* Main.storyboard */ = {
@@ -158,6 +364,14 @@
 				7E0E06D02013C68B005134DC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7E0E06DF2013C6FC005134DC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0E06E02013C6FC005134DC /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -275,6 +489,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GBY47427B;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = DemoExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socle.DemoExample;
@@ -289,12 +505,88 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GBY47427B;
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = DemoExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socle.DemoExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7E0E06F92013C6FC005134DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GBY47427B;
+				INFOPLIST_FILE = "DemoExampleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.socle.DemoExample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		7E0E06FA2013C6FC005134DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GBY47427B;
+				INFOPLIST_FILE = "DemoExampleWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.socle.DemoExample.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		7E0E06FD2013C6FC005134DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GBY47427B;
+				IBSC_MODULE = DemoExampleWatch_Extension;
+				INFOPLIST_FILE = DemoExampleWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.socle.DemoExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		7E0E06FE2013C6FC005134DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GBY47427B;
+				IBSC_MODULE = DemoExampleWatch_Extension;
+				INFOPLIST_FILE = DemoExampleWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.socle.DemoExample.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
 			};
 			name = Release;
 		};
@@ -315,6 +607,24 @@
 			buildConfigurations = (
 				7E0E06D62013C68B005134DC /* Debug */,
 				7E0E06D72013C68B005134DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0E06F82013C6FC005134DC /* Build configuration list for PBXNativeTarget "DemoExampleWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0E06F92013C6FC005134DC /* Debug */,
+				7E0E06FA2013C6FC005134DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0E06FC2013C6FC005134DC /* Build configuration list for PBXNativeTarget "DemoExampleWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0E06FD2013C6FC005134DC /* Debug */,
+				7E0E06FE2013C6FC005134DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

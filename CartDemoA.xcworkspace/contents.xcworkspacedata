@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CartDemoA.xcodeproj">
+      location = "group:DemoExample/DemoExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:CartDemoA.xcodeproj">
    </FileRef>
 </Workspace>

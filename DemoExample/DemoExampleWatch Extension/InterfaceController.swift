@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import CartDemoA
 
 class InterfaceController: WKInterfaceController {
 
@@ -16,6 +16,8 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        FakeManager().shared.doIt()
+        WatchManagerOnly().shared.doIt()
     }
     
     override func willActivate() {

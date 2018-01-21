@@ -6,8 +6,9 @@
 //  Copyright © 2018 socle. All rights reserved.
 //
 
+import CartDemoA
 import XCTest
-@testable import CartDemoA
+import ObjectMapper
 
 class CartDemoATests: XCTestCase {
     
@@ -24,7 +25,30 @@ class CartDemoATests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        FakeManager().shared.doIt()
+        MapperManager().shared.doIt()
+        _ = MapperManager().shared.mapTest(value: [:])
+        _ = MapperManager().shared.mapTest(value: ["username": "bob"])
+        let user = Mapper<User>().map(JSON: ["username": "jojo"])
+        user?.username = "me"
+        XCTAssert(user?.username == "me")
+        user?.username = nil
+        XCTAssertNil(user?.username)
+        let new = User(JSON: [:])
+        XCTAssertNil(new?.username)
+        var anil = User(JSON: ["username": "bambam"])
+        anil = nil
+        XCTAssertNil(anil)
+        
+        XCTAssertNotNil(FakeManager().shared.bundleId())
+        
     }
+    
+    #if os(watchOS)
+    func testWatchOnly() {
+        WatchManagerOnly().shared.doIt()
+    }
+    #endif
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
